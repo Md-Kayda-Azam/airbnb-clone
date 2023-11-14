@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+root {
+  height: 100%;
+}
+
+.modal-content {
+  min-width: 300px; /* Adjust as needed */
+  max-width: 600px; /* Adjust as needed */
+  width: 100%;
+}
+
+.modal-content.translate {
+  transform: translate(-50%, -50%);
+}
+
+.modal-content.translate.opacity {
+  opacity: 1;
+}
+
+.modal-content.translate.opacity.translate-y-full {
+  transform: translate(-50%, -100%);
+  opacity: 0;
+}
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 16px !important;
+}
